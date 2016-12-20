@@ -342,10 +342,6 @@ endif; ?>
 						<?php if ( $page['footer'] ) :
 							print render( $page['footer'] );
 						endif; ?>
-
-						<?php if ( $is_front ) : ?>
-							More Construction Company Drupal Themes at <a rel="nofollow" href="http://www.templatemonster.com/category/construction-company-drupal-themes/" target="_blank">TemplateMonster.com</a>
-						<?php endif; ?>
 					</div>
 				</div>
 			</div>
