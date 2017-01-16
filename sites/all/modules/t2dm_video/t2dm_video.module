@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function t2dm_video_block_info() {
+    $blocks['t2dm_video'] = array(
+        // The name that will appear in the block list.
+        'info' => t('t2dm video'),
+        // Default setting.
+        //'cache' => DRUPAL_CACHE_PER_ROLE,
+    );
+    return $blocks;
+}
+
+/**
+ * Implements hook_block_configure().
+ */
+//function t2dm_video_block_configure($delta = '') {
+//    $form = array();
+//    if ($delta == 't2dm_video') {
+//        $form['t2dm_video_title'] = array(
+//            '#type' => 'textfield',
+//            '#title' => t('Main Caption'),
+//            '#maxlength' => 255,
+//            '#default_value' => variable_get('t2dm_video_title', 'About Us'),
+//        );
+//    }
+//    return $form;
+//}
+/**
+ * Implements hook_block_save().
+ */
+//function t2dm_video_block_save($delta = '', $edit = array()) {
+//    if ($delta == 't2dm_video') {
+//        variable_set('t2dm_video_title', $edit['t2dm_video_title']);
+//    }
+//}
+/**
+ * Implements hook_block_view().
+ */
+function t2dm_video_block_view($delta = ''){
+    // This example is adapted from node.module.
+    $block = array();
+    $output ='';
+    switch ($delta) {
+        case 't2dm_video':
+//            $title = variable_get('t2dm_video_title', '');
+            $output .= ' 
+            <section id="t2dm_video">
+                <div class="container vertical-middle center clearfix">
+                <div class="video-caption">SAFETY & QUALITY</div>
+                <div class="heading-block nobottomborder">
+                    <h4></h4>
+                    <span></span>
+                </div>
+            </div>
+                <div class="video-wrap" preload="auto" mute autoplay muted>
+                <video poster="http://mc2civil-simple:8888/sites/default/files/videos/explore.jpg" preload="auto" loop autoplay muted>
+                    <source src="http://mc2civil-simple:8888/sites/default/files/videos/mc2bridge.mp4" type="video/mp4" />
+                    <source src="http://mc2civil-simple:8888//sites/default/files/videos/explore.webm" type="video/webm" />
+                </video>
+                <div class="video-overlay" style="background-color: rgba(0,0,0,0.3);"></div>
+                </div>
+            </section>';
+            $block['content'] = $output;
+            break;
+    }
+    return $block;
+}
