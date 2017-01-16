@@ -50,6 +50,7 @@ print $doctype; ?>
 
 	<title><?php print $head_title; ?></title>
 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<?php print $styles;
 	print $scripts; ?>
 
