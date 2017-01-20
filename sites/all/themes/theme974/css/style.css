@@ -2,7 +2,7 @@
 body {
 	background:#222;
 	color:#767676;
-	font-family:'Source Sans Pro', sans-serif;
+	font-family:'Lato', sans-serif;
 	font-size:14px;
 	line-height:18px;
 	min-width:1250px;
@@ -21,18 +21,18 @@ body {
 }
 h1 {
 	color:#555;
-	font:300 65px/65px 'Source Sans Pro', sans-serif;
+	font:300 65px/65px 'Lato', sans-serif;
 	margin-bottom:34px;
 }
 h2 {
 	color:#555;
-	font:300 60px/60px 'Source Sans Pro', sans-serif;
+	font:300 60px/60px 'Lato', sans-serif;
 	margin-bottom:70px;
 	text-align:center;
 }
 h3, #block-tm-follow-user h2 {
 	color:#555;
-	font:300 48px/58px 'Source Sans Pro', sans-serif;
+	font:300 48px/58px 'Lato', sans-serif;
 	margin-bottom:23px;
 	text-transform:uppercase;
 }
@@ -43,20 +43,20 @@ h3, #block-tm-follow-user h2 {
 }
 h4 {
 	color:#4472b9;
-	font:400 30px/28px 'Source Sans Pro', sans-serif;
+	font:400 30px/28px 'Lato', sans-serif;
 	margin-bottom:18px;
 	text-transform:uppercase;
 }
 h5 {
 	color:#444;
-	font:900 24px/29px 'Source Sans Pro', sans-serif;
+	font:900 24px/29px 'Lato', sans-serif;
 	margin-bottom:6px;
 	letter-spacing:-1px;
 	text-transform:uppercase;
 }
 h6 {
 	color:#555;
-	font:300 italic 21px/26px 'Source Sans Pro', sans-serif;
+	font:300 italic 21px/26px 'Lato', sans-serif;
 	margin-bottom:14px;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -74,7 +74,7 @@ input[type="text"], input[type="color"], input[type="date"], input[type="datetim
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	color:#767676 !important;
-	font:14px 'Source Sans Pro', sans-serif;
+	font:14px 'Lato', sans-serif;
 	max-width:100%;
 	padding:10px;
 }
@@ -95,7 +95,7 @@ a:hover { text-decoration:underline; }
 	box-shadow:none;
 	color:#fff;
 	display:inline-block;
-	font:400 14px/18px 'Source Sans Pro', sans-serif;
+	font:400 14px/18px 'Lato', sans-serif;
 	outline:none;
 	padding:6px 22px;
 	text-decoration:none;
@@ -414,12 +414,11 @@ img::selection, img::-moz-selection { background:transparent; }
 #superfish-1 > li {
 	background:none;
 	border:0;
-	font:400 18px/22px 'Source Sans Pro', sans-serif;
+	font:400 18px/22px 'Lato', sans-serif;
 	margin:0 0 0 5px;
 	overflow:inherit;
 	padding:0;
 	text-transform:uppercase;
-	width:112px;
 }
 #superfish-1 > li:first-child { margin-left:0; }
 #superfish-1 > li:after { display:none; }
@@ -613,7 +612,7 @@ img::selection, img::-moz-selection { background:transparent; }
 .content_top_wrapper .views-field-body { margin-bottom:40px; }
 #block-views-services-block-1 h2 {
 	color:#555;
-	font:300 60px/60px 'Source Sans Pro', sans-serif;
+	font:300 60px/60px 'Lato', sans-serif;
 	margin-bottom:77px;
 	text-align:center;
 	text-transform:none;
@@ -647,7 +646,7 @@ img::selection, img::-moz-selection { background:transparent; }
 }
 #block-views-clients-block h2 {
 	color:#555;
-	font:300 60px/60px 'Source Sans Pro', sans-serif;
+	font:300 60px/60px 'Lato', sans-serif;
 	margin-bottom:77px;
 	text-align:center;
 	text-transform:none;
@@ -677,7 +676,7 @@ div.messages {
 div.messages .dismiss {
 	box-shadow:none;
 	border-radius:2px;
-	font-family:'Source Sans Pro', sans-serif;
+	font-family:'Lato', sans-serif;
 	line-height:normal;
 	padding:2px 6px 4px;
 	text-transform:lowercase;
@@ -1588,7 +1587,7 @@ div.messages .dismiss:hover {
 }
 .page-page-404 .panel-col-first {
 	color:#be4c39;
-	font:bold 250px/200px 'Source Sans Pro', sans-serif;
+	font:bold 250px/200px 'Lato', sans-serif;
 	text-align:center;
 }
 .panel-2col .panel-col-first .inside { margin:0 20px 0 0; }
@@ -1940,6 +1939,7 @@ table .mini-day-on a:hover { text-decoration:underline; }
 	background:none;
 	bottom:100px;
 	color:transparent;
+	font-family:'Source Sans Pro', sans-serif;
 	font-size:0;
 	line-height:0;
 	margin-right:0 !important;
