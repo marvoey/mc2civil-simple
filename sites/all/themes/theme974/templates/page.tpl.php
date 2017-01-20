@@ -224,25 +224,31 @@ endif; ?>
 			</div>
 			
 			<!-- Region Content bottom -->
-			<?php if ( $page['content_bottom'] ) : 
+			<?php if ( $page['content_bottom'] ) :
 				theme974_region_preffix ( 'content_bottom' );
 					print render( $page['content_bottom'] );
 				theme974_region_suffix ( 'content_bottom' );
 			endif; ?>
 			
-			<!-- Region Section 1 -->
-			<?php if ( $page['section_1'] ) : 
-				theme974_region_preffix ( 'section_1' );
-					print render( $page['section_1'] );
-				theme974_region_suffix ( 'section_1' );
-			endif; ?>
-			
-			<!-- Region Section 2 -->
-			<?php if ( $page['section_2'] ) : 
-				theme974_region_preffix ( 'section_2' );
-					print render( $page['section_2'] );
-				theme974_region_suffix ( 'section_2' );
-			endif; ?>
+			<!-- Region Section 1 & Region Section 2 --->
+			<?php if ( $page['section_1'] ) : ?>
+			<div class="container-12 no-margin-left-right" ">
+				<div class="grid-6 section1 no-margin-left-right">
+<!--//				theme974_region_preffix ( 'section_1' );-->
+					<?php print render( $page['section_1'] ); ?>
+<!--//				theme974_region_suffix ( 'section_1' );-->
+					<?php endif; ?>
+				</div>
+
+
+			<?php if ( $page['section_2'] ) : ?>
+				<div class="grid-6 section2 no-margin-left-right">
+					<!--//				theme974_region_preffix ( 'section_1' );-->
+					<?php print render( $page['section_2'] ); ?>
+					<!--//				theme974_region_suffix ( 'section_1' );-->
+					<?php endif; ?>
+				</div>
+			</div>
 			
 			<!-- Region Section 3 -->
 			<?php if ( $page['section_3'] ) : 
@@ -309,28 +315,28 @@ endif; ?>
 				<div class="footer-top-wrapper">
 					<div class="container-12">
 						<?php if ( $page['footer_top_1'] ) : ?>
-							<div class="grid-3">
+							<div class="grid-4">
 								<?php print render( $page['footer_top_1'] ); ?>
 							</div>
 						<?php endif;
 						
 						if ( $page['footer_top_2'] ) : ?>
-							<div class="grid-3">
+							<div class="grid-4">
 								<?php print render( $page['footer_top_2'] ); ?>
 							</div>
 						<?php endif;
 						
 						if ( $page['footer_top_3'] ) : ?>
-							<div class="grid-3">
+							<div class="grid-4">
 								<?php print render( $page['footer_top_3'] ); ?>
 							</div>
 						<?php endif;
-						
-						if ( $page['footer_top_4'] ) : ?>
-							<div class="grid-3">
-								<?php print render( $page['footer_top_4'] ); ?>
-							</div>
-						<?php endif; ?>
+//
+//						if ( $page['footer_top_4'] ) : ?>
+<!--							<div class="grid-3">-->
+<!--								--><?php //print render( $page['footer_top_4'] ); ?>
+<!--							</div>-->
+<!--						--><?php //endif; ?>
 					</div>
 				</div>
 			<?php endif; ?>

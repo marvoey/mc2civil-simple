@@ -2,7 +2,7 @@
     background-color: rgba(255,255,255,0.75);
 }
 .view.view-slider.view-id-slider.view-display-id-block{
-    margin-top: -188px; /* has to be the height of the bav bar*/
+    /*margin-top: -188px; !* has to be the height of the bav bar*!*/
 }
 #page-wrapper:before {
     height: 0px;
@@ -89,4 +89,39 @@ body {
 }
 #header_wrapper {
     border-top: none;
+}
+.region.region-section-2 #block-views-slider-block {
+    left: 0;
+    margin-left: auto;
+}
+
+.container-12 .grid-6.section1 {
+    width: 50%;
+}
+.container-12 .grid-6.section2 {
+    width: 50%;
+}
+.no-margin-left-right {
+    margin-left: 0;
+    margin-right: 0;
+}
+.container-12.no-margin-left-right {
+    width: 100%;
+}
+.mc2value {
+    color: #eeeeee;
+    font-size: 35px;
+    line-height: 2.5;
+}
+/* hiding flex nav for the Slider Small in section 2 */
+.region-section-2 #block-views-slider-block-1 .flex-direction-nav {
+    display: none;
+}
+.footer-top-wrapper .block-title {
+    font-size: 23px;
+}
+.footer-top-wrapper {
+    color: #eeeeee;
+    line-height: 30px;
+    font-size: 18px;
 }
