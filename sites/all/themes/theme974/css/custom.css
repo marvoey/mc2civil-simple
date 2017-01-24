@@ -107,11 +107,12 @@ body {
 }
 .container-12.no-margin-left-right {
     width: 100%;
+    background-color: #5f605b;
 }
 .mc2value {
     color: #eeeeee;
     font-size: 35px;
-    line-height: 2.5;
+    line-height: 2.0;
 }
 /* hiding flex nav for the Slider Small in section 2 */
 .region-section-2 #block-views-slider-block-1 .flex-direction-nav {
