@@ -126,3 +126,11 @@ body {
     line-height: 30px;
     font-size: 18px;
 }
+.form-item.webform-component.webform-component-textfield.webform-component--job-title label,
+.form-item.webform-component.webform-component-textfield.webform-component--first label,
+.form-item.webform-component.webform-component-textfield.webform-component--last label,
+.form-item.webform-component.webform-component-email.webform-component--email label{
+    display: inherit;
+
+}
+
