@@ -431,6 +431,7 @@ img::selection, img::-moz-selection { background:transparent; }
 }
 #superfish-1 > li > a:hover, #superfish-1 > li.active-trail > a, #superfish-1 > li.sfHover > a {
 	background:#4ca454;
+	background:#be4c39;
 	color:#fff;
 	text-decoration:none;
 }
