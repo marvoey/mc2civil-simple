@@ -204,7 +204,6 @@ function drupal_install_profile_distribution_name() {
   else {
     $profile = drupal_get_profile();
     $info = system_get_info('module', $profile);
-    if ( ! array_key_exists('distribution_name', $info)) $info['distribution_name'] = 'Drupal';
     return $info['distribution_name'];
   }
 }
@@ -751,7 +750,7 @@ function drupal_install_system() {
 /**
  * Uninstalls a given list of disabled modules.
  *
- * @param array $module_list
+ * @param string[] $module_list
  *   The modules to uninstall. It is the caller's responsibility to ensure that
  *   all modules in this list have already been disabled before this function
  *   is called.
@@ -770,6 +769,7 @@ function drupal_install_system() {
  *   included in $module_list).
  *
  * @see module_disable()
+ * @see module_enable()
  */
 function drupal_uninstall_modules($module_list = array(), $uninstall_dependents = TRUE) {
   if ($uninstall_dependents) {

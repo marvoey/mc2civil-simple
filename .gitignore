@@ -4,9 +4,3 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
-
-404-3.html
-settings.php
-sites/default/files/mc2civilinc-2017-01-04T19-46-20
-sites/default/files
-sites/default/tmp
